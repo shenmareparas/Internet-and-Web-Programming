@@ -1,10 +1,10 @@
 body {
-    background-image: url(billi.jpg);
+    background-image: url("assets/billi.jpg");
     /* background-position: bottom right; */
     background-position: 50% 20%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: black;
+    background-color: grey;
 
 }
 
