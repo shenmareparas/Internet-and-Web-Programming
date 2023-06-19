@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 3</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Shoe Size</th>
+    </tr>
+    <tr>
+      <td id="name1"></td>
+      <td id="age1"></td>
+      <td id="shoeSize1"></td>
+    </tr>
+    <tr>
+      <td id="name2"></td>
+      <td id="age2"></td>
+      <td id="shoeSize2"></td>
+    </tr>
+    <tr>
+      <td id="name3"></td>
+      <td id="age3"></td>
+      <td id="shoeSize3"></td>
+    </tr>
+  </table>
+
+  <script type="text/javascript">
+    var name1 = prompt("Enter person 1's name:");
+    var age1 = prompt("Enter person 1's age:");
+    var shoeSize1 = prompt("Enter person 1's shoe size:");
+    document.getElementById("name1").innerHTML = name1;
+    document.getElementById("age1").innerHTML = age1;
+    document.getElementById("shoeSize1").innerHTML = shoeSize1;
+
+    var name2 = prompt("Enter person 2's name:");
+    var age2 = prompt("Enter person 2's age:");
+    var shoeSize2 = prompt("Enter person 2's shoe size:");
+    document.getElementById("name2").innerHTML = name2;
+    document.getElementById("age2").innerHTML = age2;
+    document.getElementById("shoeSize2").innerHTML = shoeSize2;
+
+    var name3 = prompt("Enter person 3's name:");
+    var age3 = prompt("Enter person 3's age:");
+    var shoeSize3 = prompt("Enter person 3's shoe size:");
+    document.getElementById("name3").innerHTML = name3;
+    document.getElementById("age3").innerHTML = age3;
+    document.getElementById("shoeSize3").innerHTML = shoeSize3;
+  </script>
+</body>
+</html>
