@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        function generate() {
+            var values = "";
+            for (var i = 1; i <= 4; i++) {
+                var value = Math.floor(Math.random() * 9);
+                values += value;
+            }
+            document.getElementById("output").innerHTML = values;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="generate" onclick="generate()">
+    <p id="output"></p>
+</body>
+</html>
