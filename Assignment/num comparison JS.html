@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Question 5</title>
-</head>
-<body>
-<script>
-  var num1 = parseInt(prompt("Enter the first integer:"));
-  var num2 = parseInt(prompt("Enter the second integer:"));
+    <head>
+        <meta charset="UTF-8" />
+        <title>Question 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <script>
+            var num1 = parseInt(prompt("Enter the first integer:"));
+            var num2 = parseInt(prompt("Enter the second integer:"));
 
-  if (num1 < num2) {
-    alert(num1 + " is smaller");
-  } if (num1 > num2) {
-    alert(num2 + " is smaller");
-  } if(num1 === num2) {
-    var resultText = document.createElement("p");
-    resultText.innerHTML = "<h1>These numbers are equal.</h1>";
-    document.body.appendChild(resultText);
-  }
-</script>
-</body>
+            if (num1 < num2) {
+                alert(num1 + " is smaller");
+            }
+            if (num1 > num2) {
+                alert(num2 + " is smaller");
+            }
+            if (num1 === num2) {
+                var resultText = document.createElement("p");
+                resultText.innerHTML = "<h1>These numbers are equal.</h1>";
+                document.body.appendChild(resultText);
+            }
+        </script>
+    </body>
 </html>

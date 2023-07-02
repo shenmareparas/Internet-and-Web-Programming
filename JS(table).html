@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>Javascript</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
             table {
-              border-collapse: collapse;
+                border-collapse: collapse;
             }
-        
-            th, td {
-              border: 1px solid black;
-              padding: 8px;
+
+            th,
+            td {
+                border: 1px solid black;
+                padding: 8px;
             }
-          </style>
+        </style>
     </head>
     <body>
         <table>
@@ -23,42 +24,42 @@
                 <th>cube</th>
             </tr>
             <tr>
-                <td id = "x"></td>
-                <td id = "xsquare"></td>
-                <td id = "xcube"></td>
+                <td id="x"></td>
+                <td id="xsquare"></td>
+                <td id="xcube"></td>
             </tr>
             <tr>
-                <td id = "y"></td>
-                <td id = "ysquare"></td>
-                <td id = "ycube"></td>
+                <td id="y"></td>
+                <td id="ysquare"></td>
+                <td id="ycube"></td>
             </tr>
             <tr>
-                <td id = "z"></td>
-                <td id = "zsquare"></td>
-                <td id = "zcube"></td>
+                <td id="z"></td>
+                <td id="zsquare"></td>
+                <td id="zcube"></td>
             </tr>
         </table>
 
         <script type="text/javascript">
             var x, y, z, xsquare, ysquare, zsquare, xcube, ycube, zcube;
             var xval, yval, zval;
-    
+
             xval = window.prompt("Enter first number");
             yval = window.prompt("Enter second number");
             zval = window.prompt("Enter third number");
-    
-            x= parseInt(xval);
-            y= parseInt(yval);
-            z= parseInt(zval);
-    
-            xsquare = x*x;
-            ysquare = y*y;
-            zsquare = z*z;
-    
-            xcube = x*x*x;
-            ycube = y*y*y;
-            zcube = z*z*z;
-            
+
+            x = parseInt(xval);
+            y = parseInt(yval);
+            z = parseInt(zval);
+
+            xsquare = x * x;
+            ysquare = y * y;
+            zsquare = z * z;
+
+            xcube = x * x * x;
+            ycube = y * y * y;
+            zcube = z * z * z;
+
             document.getElementById("x").innerHTML = x;
             document.getElementById("y").innerHTML = y;
             document.getElementById("z").innerHTML = z;

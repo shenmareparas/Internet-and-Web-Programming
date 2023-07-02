@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>Javascript</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script type="text/javascript">
             var x = window.prompt("Please enter x: ");
             var y = window.prompt("Please enter y: ");
@@ -13,9 +13,9 @@
             y = parseInt(y);
             z = parseInt(z);
 
-            document.writeln("<h1>Maximum is: " + maximum(x,y,z) + "</h1>");
-            function maximum(){
-                return (Math.max(x, Math.max (y,z)));
+            document.writeln("<h1>Maximum is: " + maximum(x, y, z) + "</h1>");
+            function maximum() {
+                return Math.max(x, Math.max(y, z));
             }
         </script>
     </head>

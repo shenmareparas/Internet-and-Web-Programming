@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Maths Questions</title>
-  <script>
-    var num1, num2;
+    <head>
+        <meta charset="UTF-8" />
+        <title>Maths Questions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>
+            var num1, num2;
 
-    function question() {
-      num1 = Math.floor(Math.random() * 9) + 1;
-      num2 = Math.floor(Math.random() * 9) + 1;
-      var question = "How much is " + num1 + " times " + num2 + "?";
-      document.getElementById("question").textContent = question;
-    }
+            function question() {
+                num1 = Math.floor(Math.random() * 9) + 1;
+                num2 = Math.floor(Math.random() * 9) + 1;
+                var question = "How much is " + num1 + " times " + num2 + "?";
+                document.getElementById("question").textContent = question;
+            }
 
-    function answer() {
-      var answer = document.getElementById("answer").value;
-      var result = document.getElementById("result");
-      var right_answer = num1 * num2;
-      var response = Math.floor(Math.random() * 4) + 1;
+            function answer() {
+                var answer = document.getElementById("answer").value;
+                var result = document.getElementById("result");
+                var right_answer = num1 * num2;
+                var response = Math.floor(Math.random() * 4) + 1;
 
-      if (answer == right_answer) {
-        switch (response) {
-          case 1:
-            result.textContent = "Very good!";
-            break;
-          case 2:
-            result.textContent = "Excellent!";
-            break;
-          case 3:
-            result.textContent = "Nice work!";
-            break;
-          case 4:
-            result.textContent = "Keep up the good work!";
-            break;
-        }
-        question();
-      } else {
-        switch (response) {
-          case 1:
-            result.textContent = "No. Please try again.";
-            break;
-          case 2:
-            result.textContent = "Wrong. Try once more.";
-            break;
-          case 3:
-            result.textContent = "Don't give up!";
-            break;
-          case 4:
-            result.textContent = "No. Keep trying.";
-            break;
-        }
-      }
-    }
+                if (answer == right_answer) {
+                    switch (response) {
+                        case 1:
+                            result.textContent = "Very good!";
+                            break;
+                        case 2:
+                            result.textContent = "Excellent!";
+                            break;
+                        case 3:
+                            result.textContent = "Nice work!";
+                            break;
+                        case 4:
+                            result.textContent = "Keep up the good work!";
+                            break;
+                    }
+                    question();
+                } else {
+                    switch (response) {
+                        case 1:
+                            result.textContent = "No. Please try again.";
+                            break;
+                        case 2:
+                            result.textContent = "Wrong. Try once more.";
+                            break;
+                        case 3:
+                            result.textContent = "Don't give up!";
+                            break;
+                        case 4:
+                            result.textContent = "No. Keep trying.";
+                            break;
+                    }
+                }
+            }
 
-    function start() {
-      question();
-    }
-  </script>
-</head>
-<body onload="start()">
-  <div id="question"></div>
-  <br>
-  <input type="text" id="answer">
-  <br><br>
-  <button onclick="answer()">Check</button>
-  <p id="result"></p>
-</body>
+            function start() {
+                question();
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <div id="question"></div>
+        <br />
+        <input type="text" id="answer" />
+        <br /><br />
+        <button onclick="answer()">Check</button>
+        <p id="result"></p>
+    </body>
 </html>

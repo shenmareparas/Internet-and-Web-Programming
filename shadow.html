@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <title>Text Shadow</title>
         <style>
-            h1 {text-shadow: 14px -4px 2px red;
-                           /* hor ver blur color  */
-                font-size: 400%;}
+            h1 {
+                text-shadow: 14px -4px 2px red;
+                /* hor ver blur color  */
+                font-size: 400%;
+            }
             div {
                 border: 3px solid navy;
                 padding: 5px 20px;
                 border-radius: 15px;
                 text-align: center;
-                background-color: rgba(10,255,255,0.2);
-                                    /* red green blue darkness[alpha] */
+                background-color: rgba(10, 255, 255, 0.2);
+                /* red green blue darkness[alpha] */
             }
-            .box {width: 200px;
+            .box {
+                width: 200px;
                 height: 200px;
                 background-color: cyan;
                 box-shadow: 25px 25px 50px green;
                 float: left;
                 margin-right: 120px;
                 margin-top: 40px;
-
             }
             .box2 {
                 width: 200px;
@@ -30,41 +32,54 @@
                 background-color: rgb(25, 166, 58);
                 box-shadow: 25px 25px 50px red;
             }
-            .lineargradient{/*gradients are horizontal, vertical and diagonal*/
+            .lineargradient {
+                /*gradients are horizontal, vertical and diagonal*/
                 width: 200px;
                 height: 200px;
                 border: 3px solid navy;
                 background: -webkit-gradient(
-                    linear, center top, center bottom,
-                    color-stop(15%,White),color-stop(50%,lightsteelblue),
-                    color-stop(75%,navy));
+                    linear,
+                    center top,
+                    center bottom,
+                    color-stop(15%, White),
+                    color-stop(50%, lightsteelblue),
+                    color-stop(75%, navy)
+                );
             }
-            .horizontalgradient{width: 200px;
+            .horizontalgradient {
+                width: 200px;
                 height: 200px;
                 border: 3px solid navy;
                 background: -webkit-gradient(
-                    linear, right top, right bottom, /*change these values accordingly*/
-                    color-stop(15%,White),color-stop(50%,lightsteelblue),
-                    color-stop(75%,navy));
+                    linear,
+                    right top,
+                    right bottom,
+                    /*change these values accordingly*/ color-stop(15%, White),
+                    color-stop(50%, lightsteelblue),
+                    color-stop(75%, navy)
+                );
             }
-            .radialgradient{width: 200px;
+            .radialgradient {
+                width: 200px;
                 height: 200px;
                 background: -webkit-gradient(center yellow red);
-
             }
         </style>
     </head>
     <body>
-        <h1>
-            Text shadow
-        </h1>
+        <h1>Text shadow</h1>
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus molestias recusandae incidunt itaque, quaerat modi omnis ipsum voluptatem minima alias esse dolorum tempore totam optio placeat nulla doloribus fugiat laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            molestias recusandae incidunt itaque, quaerat modi omnis ipsum
+            voluptatem minima alias esse dolorum tempore totam optio placeat
+            nulla doloribus fugiat laudantium.
         </div>
-        <br>
-        <div>One Id can be give to only one thing while classes can be used multiple times</div>
+        <br />
+        <div>
+            One Id can be give to only one thing while classes can be used
+            multiple times
+        </div>
         <!-- <p class="box">jhdsfhkj</p> -->
         <p class="radialgradient">Helloww</p>
-    
     </body>
 </html>

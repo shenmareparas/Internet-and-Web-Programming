@@ -1,160 +1,177 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Maths Questions</title>
-  <script>
-    var num1, num2;
-    var correctCount = 0;
-    var incorrectCount = 0;
-    var totalQuestions = 0;
-    var selectedOption = 1;
+    <head>
+        <meta charset="UTF-8" />
+        <title>Maths Questions</title>
+        <script>
+            var num1, num2;
+            var correctCount = 0;
+            var incorrectCount = 0;
+            var totalQuestions = 0;
+            var selectedOption = 1;
 
-    function question() {
-      num1 = Math.floor(Math.random() * 9) + 1;
-      num2 = Math.floor(Math.random() * 9) + 1;
+            function question() {
+                num1 = Math.floor(Math.random() * 9) + 1;
+                num2 = Math.floor(Math.random() * 9) + 1;
 
-      var arithmeticOperator;
-      var right_answer;
+                var arithmeticOperator;
+                var right_answer;
 
-      switch (selectedOption) {
-        case 1:
-          arithmeticOperator = "+";
-          right_answer = num1 + num2;
-          break;
-        case 2:
-          arithmeticOperator = "-";
-          right_answer = num1 - num2;
-          break;
-        case 3:
-          arithmeticOperator = "×";
-          right_answer = num1 * num2;
-          break;
-        case 4:
-          num2 = Math.floor(Math.random() * (num1 - 1)) + 1;
-          arithmeticOperator = "÷";
-          right_answer = num1 / num2;
-          break;
-        case 5:
-          var operators = ["+", "-", "×", "÷"];
-          var operator_number = Math.floor(Math.random() * operators.length);
-          arithmeticOperator = operators[operator_number];
+                switch (selectedOption) {
+                    case 1:
+                        arithmeticOperator = "+";
+                        right_answer = num1 + num2;
+                        break;
+                    case 2:
+                        arithmeticOperator = "-";
+                        right_answer = num1 - num2;
+                        break;
+                    case 3:
+                        arithmeticOperator = "×";
+                        right_answer = num1 * num2;
+                        break;
+                    case 4:
+                        num2 = Math.floor(Math.random() * (num1 - 1)) + 1;
+                        arithmeticOperator = "÷";
+                        right_answer = num1 / num2;
+                        break;
+                    case 5:
+                        var operators = ["+", "-", "×", "÷"];
+                        var operator_number = Math.floor(
+                            Math.random() * operators.length
+                        );
+                        arithmeticOperator = operators[operator_number];
 
-          switch (arithmeticOperator) {
-            case "+":
-              right_answer = num1 + num2;
-              break;
-            case "-":
-              right_answer = num1 - num2;
-              break;
-            case "×":
-              right_answer = num1 * num2;
-              break;
-            case "÷":
-              num2 = Math.floor(Math.random() * (num1 - 1)) + 1;
-              right_answer = num1 / num2;
-              break;
-          }
-          break;
-      }
+                        switch (arithmeticOperator) {
+                            case "+":
+                                right_answer = num1 + num2;
+                                break;
+                            case "-":
+                                right_answer = num1 - num2;
+                                break;
+                            case "×":
+                                right_answer = num1 * num2;
+                                break;
+                            case "÷":
+                                num2 =
+                                    Math.floor(Math.random() * (num1 - 1)) + 1;
+                                right_answer = num1 / num2;
+                                break;
+                        }
+                        break;
+                }
 
-      var question = "How much is " + num1 + " " + arithmeticOperator + " " + num2 + "?";
-      document.getElementById("question").textContent = question;
-      return right_answer;
-    }
+                var question =
+                    "How much is " +
+                    num1 +
+                    " " +
+                    arithmeticOperator +
+                    " " +
+                    num2 +
+                    "?";
+                document.getElementById("question").textContent = question;
+                return right_answer;
+            }
 
-    function answer() {
-      var answer = document.getElementById("answer").value;
-      var result = document.getElementById("result");
-      var right_answer = question();
+            function answer() {
+                var answer = document.getElementById("answer").value;
+                var result = document.getElementById("result");
+                var right_answer = question();
 
-      if (answer == right_answer) {
-        var response = Math.floor(Math.random() * 4) + 1;
-        switch (response) {
-          case 1:
-            result.textContent = "Very good!";
-            break;
-          case 2:
-            result.textContent = "Excellent!";
-            break;
-          case 3:
-            result.textContent = "Nice work!";
-            break;
-          case 4:
-            result.textContent = "Keep up the good work!";
-            break;
-        }
-        correctCount++;
-      } else {
-        var response = Math.floor(Math.random() * 4) + 1;
-        switch (response) {
-          case 1:
-            result.textContent = "No. Please try again.";
-            break;
-          case 2:
-            result.textContent = "Wrong. Try once more.";
-            break;
-          case 3:
-            result.textContent = "Don't give up!";
-            break;
-          case 4:
-            result.textContent = "No. Keep trying.";
-            break;
-        }
-        incorrectCount++;
-      }
+                if (answer == right_answer) {
+                    var response = Math.floor(Math.random() * 4) + 1;
+                    switch (response) {
+                        case 1:
+                            result.textContent = "Very good!";
+                            break;
+                        case 2:
+                            result.textContent = "Excellent!";
+                            break;
+                        case 3:
+                            result.textContent = "Nice work!";
+                            break;
+                        case 4:
+                            result.textContent = "Keep up the good work!";
+                            break;
+                    }
+                    correctCount++;
+                } else {
+                    var response = Math.floor(Math.random() * 4) + 1;
+                    switch (response) {
+                        case 1:
+                            result.textContent = "No. Please try again.";
+                            break;
+                        case 2:
+                            result.textContent = "Wrong. Try once more.";
+                            break;
+                        case 3:
+                            result.textContent = "Don't give up!";
+                            break;
+                        case 4:
+                            result.textContent = "No. Keep trying.";
+                            break;
+                    }
+                    incorrectCount++;
+                }
 
-      totalQuestions++;
+                totalQuestions++;
 
-      if (totalQuestions === 10) {
-        var percentage = (correctCount / totalQuestions) * 100;
+                if (totalQuestions === 10) {
+                    var percentage = (correctCount / totalQuestions) * 100;
 
-        if (percentage < 75) {
-          result.innerHTML = "<b>Please ask your instructor for extra help</b>, and reset the quiz so another student can try it.";
-        } else {
-          result.textContent = "Quiz completed! Your percentage: " + percentage.toFixed(2) + "%";
-        }
+                    if (percentage < 75) {
+                        result.innerHTML =
+                            "<b>Please ask your instructor for extra help</b>, and reset the quiz so another student can try it.";
+                    } else {
+                        result.textContent =
+                            "Quiz completed! Your percentage: " +
+                            percentage.toFixed(2) +
+                            "%";
+                    }
 
-        correctCount = 0;
-        incorrectCount = 0;
-        totalQuestions = 0;
-      }
-    }
+                    correctCount = 0;
+                    incorrectCount = 0;
+                    totalQuestions = 0;
+                }
+            }
 
-    function changeOption() {
-      selectedOption = parseInt(document.getElementById("option").value);
-      resetQuiz();
-    }
+            function changeOption() {
+                selectedOption = parseInt(
+                    document.getElementById("option").value
+                );
+                resetQuiz();
+            }
 
-    function resetQuiz() {
-      correctCount = 0;
-      incorrectCount = 0;
-      totalQuestions = 0;
-      question();
-      document.getElementById("result").textContent = "";
-      document.getElementById("answer").value = "";
-    }
+            function resetQuiz() {
+                correctCount = 0;
+                incorrectCount = 0;
+                totalQuestions = 0;
+                question();
+                document.getElementById("result").textContent = "";
+                document.getElementById("answer").value = "";
+            }
 
-    function start() {
-      question();
-    }
-  </script>
-</head>
-<body onload="start()">
-  <div>
-    <label for="option">Choose the arithmetic problem type:</label>
-    <select id="option" onchange="changeOption()">
-      <option value="1">Addition</option>
-      <option value="2">Subtraction</option>
-      <option value="3">Multiplication</option>
-      <option value="4">Division</option>
-      <option value="5">Random intermix</option>
-    </select>
-  </div>
-  <div id="question"></div>
-  <br>
-  <input type="text" id="answer">
-  <br><br>
-  <button onclick="answer()">Check</button>
-  <p id="result"></p>
-</body>
+            function start() {
+                question();
+            }
+        </script>
+    </head>
+    <body onload="start()">
+        <div>
+            <label for="option">Choose the arithmetic problem type:</label>
+            <select id="option" onchange="changeOption()">
+                <option value="1">Addition</option>
+                <option value="2">Subtraction</option>
+                <option value="3">Multiplication</option>
+                <option value="4">Division</option>
+                <option value="5">Random intermix</option>
+            </select>
+        </div>
+        <div id="question"></div>
+        <br />
+        <input type="text" id="answer" />
+        <br /><br />
+        <button onclick="answer()">Check</button>
+        <p id="result"></p>
+    </body>
 </html>
