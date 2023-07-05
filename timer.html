@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>load Event</title>
+        <script>
+            var seconds = 0;
+            // called when the page loads to begin the timer
+            function startTimer() {
+                window.setInterval("updateTime()", 1000);
+            }
+            // called every 1000 ms to update the timer
+            function updateTime() {
+                ++seconds;
+                document.getElementById("soFar").innerHTML = seconds;
+            }
+            window.addEventListener("load", startTimer, false);
+        </script>
+    </head>
+    <body>
+        <p>
+            Seconds you have spent viewing this page so far:
+            <span id="soFar">0</span>
+        </p>
+    </body>
+</html>
