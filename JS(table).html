@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Javascript</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-            table {
-                border-collapse: collapse;
-            }
 
-            th,
-            td {
-                border: 1px solid black;
-                padding: 8px;
-            }
-        </style>
-    </head>
-    <body>
-        <table>
-            <tr>
-                <th>number</th>
-                <th>square</th>
-                <th>cube</th>
-            </tr>
-            <tr>
-                <td id="x"></td>
-                <td id="xsquare"></td>
-                <td id="xcube"></td>
-            </tr>
-            <tr>
-                <td id="y"></td>
-                <td id="ysquare"></td>
-                <td id="ycube"></td>
-            </tr>
-            <tr>
-                <td id="z"></td>
-                <td id="zsquare"></td>
-                <td id="zcube"></td>
-            </tr>
-        </table>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        table {
+            border-collapse: collapse;
+        }
 
-        <script type="text/javascript">
-            var x, y, z, xsquare, ysquare, zsquare, xcube, ycube, zcube;
-            var xval, yval, zval;
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
 
-            xval = window.prompt("Enter first number");
-            yval = window.prompt("Enter second number");
-            zval = window.prompt("Enter third number");
+<body>
+    <table>
+        <tr>
+            <th>number</th>
+            <th>square</th>
+            <th>cube</th>
+        </tr>
+        <tr>
+            <td id="x"></td>
+            <td id="xsquare"></td>
+            <td id="xcube"></td>
+        </tr>
+        <tr>
+            <td id="y"></td>
+            <td id="ysquare"></td>
+            <td id="ycube"></td>
+        </tr>
+        <tr>
+            <td id="z"></td>
+            <td id="zsquare"></td>
+            <td id="zcube"></td>
+        </tr>
+    </table>
 
-            x = parseInt(xval);
-            y = parseInt(yval);
-            z = parseInt(zval);
+    <script type="text/javascript">
+        var x, y, z, xsquare, ysquare, zsquare, xcube, ycube, zcube;
+        var xval, yval, zval;
 
-            xsquare = x * x;
-            ysquare = y * y;
-            zsquare = z * z;
+        xval = window.prompt("Enter first number");
+        yval = window.prompt("Enter second number");
+        zval = window.prompt("Enter third number");
 
-            xcube = x * x * x;
-            ycube = y * y * y;
-            zcube = z * z * z;
+        x = parseInt(xval);
+        y = parseInt(yval);
+        z = parseInt(zval);
 
-            document.getElementById("x").innerHTML = x;
-            document.getElementById("y").innerHTML = y;
-            document.getElementById("z").innerHTML = z;
-            document.getElementById("xsquare").innerHTML = xsquare;
-            document.getElementById("ysquare").innerHTML = ysquare;
-            document.getElementById("zsquare").innerHTML = zsquare;
-            document.getElementById("xcube").innerHTML = xcube;
-            document.getElementById("ycube").innerHTML = ycube;
-            document.getElementById("zcube").innerHTML = zcube;
-        </script>
-    </body>
+        xsquare = x * x;
+        ysquare = y * y;
+        zsquare = z * z;
+
+        xcube = x * x * x;
+        ycube = y * y * y;
+        zcube = z * z * z;
+
+        document.getElementById("x").innerHTML = x;
+        document.getElementById("y").innerHTML = y;
+        document.getElementById("z").innerHTML = z;
+        document.getElementById("xsquare").innerHTML = xsquare;
+        document.getElementById("ysquare").innerHTML = ysquare;
+        document.getElementById("zsquare").innerHTML = zsquare;
+        document.getElementById("xcube").innerHTML = xcube;
+        document.getElementById("ycube").innerHTML = ycube;
+        document.getElementById("zcube").innerHTML = zcube;
+    </script>
+</body>
+
 </html>

@@ -5,52 +5,61 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: grey;
-
 }
 
-p { background-color: aqua;
+p {
+    background-color: aqua;
     text-indent: 0.6em;
     font-size: 1.3em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-span {  color: red;
-        font-size: 6pt;
-        height: 1em;
+
+span {
+    color: red;
+    font-size: 6pt;
+    height: 1em;
 }
+
 /* these are classes  class=""*/
-.super1{
+.super1 {
     position: relative;
     top: -1ex;
 }
-.sub1{
+
+.sub1 {
     position: relative;
     bottom: -1ex;
 }
-.shiftleft{
+
+.shiftleft {
     position: relative;
     left: 1ex;
 }
-.shitright{
+
+.shitright {
     position: relative;
     right: 1ex;
 }
+
 .bgi {
     position: absolute;
     top: 10px;
     left: 10px;
     z-index: 1;
 }
+
 .fgi {
     position: absolute;
     top: 25px;
     left: 100px;
     z-index: 2;
 }
+
 .text {
     position: absolute;
     top: 25px;
     left: 100px;
     z-index: 3;
     font-size: 20pt;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

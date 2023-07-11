@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Javascript</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script type="text/javascript">
-            var length = window.prompt("Enter array length: ");
-            array = [];
-            var total = 0;
 
-            for (var i = 0; i < length; i++) {
-                array[i] = parseInt(window.prompt("Enter array item: "));
-            }
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript">
+        var length = window.prompt("Enter array length: ");
+        array = [];
+        var total = 0;
 
-            for (var i = 0; i < length; i++) {
-                total += array[i];
-            }
+        for (var i = 0; i < length; i++) {
+            array[i] = parseInt(window.prompt("Enter array item: "));
+        }
 
-            document.writeln(total);
-        </script>
-    </head>
-    <body></body>
+        for (var i = 0; i < length; i++) {
+            total += array[i];
+        }
+
+        document.writeln(total);
+    </script>
+</head>
+
+<body></body>
+
 </html>

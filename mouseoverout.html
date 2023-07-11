@@ -1,93 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Events mouseover and mouseout</title>
-        <style>
-            textarea {
-                width: 300px;
-                height: 100px;
-            }
-            label.fixed {
-                width: 4em;
-                float: left;
-            }
-            #helpText {
-                font-family: sans-serif;
-                color: blue;
-                margin-top: 10px;
-            }
-            p {
-                margin: 0;
-            }
-        </style>
-        <script>
-            image1 = new Image();
-            image1.src = "heading1.png";
-            image2 = new Image();
-            image2.src = "heading2.png";
 
-            function mouseOver(e) {
-                // swap the image when the mouse moves over it
-                if (e.target.getAttribute("id") == "heading") {
-                    e.target.setAttribute("src", image2.getAttribute("src"));
-                }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events mouseover and mouseout</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 100px;
+        }
 
-                // if the element is an li, assign its id to its color
-                // to change the hex code's text to the corresponding color
-                if (e.target.tagName.toLowerCase() == "li") {
-                    e.target.setAttribute(
-                        "style",
-                        "color: " + e.target.getAttribute("id")
-                    );
-                }
+        label.fixed {
+            width: 4em;
+            float: left;
+        }
+
+        #helpText {
+            font-family: sans-serif;
+            color: blue;
+            margin-top: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+    <script>
+        image1 = new Image();
+        image1.src = "heading1.png";
+        image2 = new Image();
+        image2.src = "heading2.png";
+
+        function mouseOver(e) {
+            // swap the image when the mouse moves over it
+            if (e.target.getAttribute("id") == "heading") {
+                e.target.setAttribute("src", image2.getAttribute("src"));
             }
 
-            function mouseOut(e) {
-                // put the original image back when the mouse moves away
-                if (e.target.getAttribute("id") == "heading") {
-                    e.target.setAttribute("src", image1.getAttribute("src"));
-                } // end if
-
-                // if the element is an li, assign its id to innerHTML
-                // to display the color name
-                if (e.target.tagName.toLowerCase() == "li") {
-                    e.target.innerHTML = e.target.getAttribute("id");
-                }
+            // if the element is an li, assign its id to its color
+            // to change the hex code's text to the corresponding color
+            if (e.target.tagName.toLowerCase() == "li") {
+                e.target.setAttribute(
+                    "style",
+                    "color: " + e.target.getAttribute("id")
+                );
             }
+        }
 
-            document.addEventListener("mouseover", mouseOver, false);
-            document.addEventListener("mouseout", mouseOut, false);
-        </script>
-    </head>
-    <body>
-        <h1><img src="heading1.png" id="heading" alt="Heading Image" /></h1>
-        <p>
-            Can you tell a color from its hexadecimal RGB code value? Look at
-            the hex code, guess its color. To see what color it corresponds to,
-            move the mouse over the hex code. Moving the mouse out of the hex
-            code's table cell will display the color name.
-        </p>
-        <div>
-            <ul>
-                <li id="Black">#000000</li>
-                <li id="Blue">#0000FF</li>
-                <li id="Magenta">#FF00FF</li>
-                <li id="Gray">#808080</li>
-                <li id="Green">#008000</li>
-                <li id="Lime">#00FF00</li>
-                <li id="Maroon">#800000</li>
-                <li id="Navy">#000080</li>
-                <li id="Olive">#808000</li>
-                <li id="Purple">#800080</li>
-                <li id="Red">#FF0000</li>
-                <li id="Silver">#C0C0C0</li>
-                <li id="Cyan">#00FFFF</li>
-                <li id="Teal">#008080</li>
-                <li id="Yellow">#FFFF00</li>
-                <li id="White">#FFFFFF</li>
-            </ul>
-        </div>
-    </body>
+        function mouseOut(e) {
+            // put the original image back when the mouse moves away
+            if (e.target.getAttribute("id") == "heading") {
+                e.target.setAttribute("src", image1.getAttribute("src"));
+            } // end if
+
+            // if the element is an li, assign its id to innerHTML
+            // to display the color name
+            if (e.target.tagName.toLowerCase() == "li") {
+                e.target.innerHTML = e.target.getAttribute("id");
+            }
+        }
+
+        document.addEventListener("mouseover", mouseOver, false);
+        document.addEventListener("mouseout", mouseOut, false);
+    </script>
+</head>
+
+<body>
+    <h1><img src="heading1.png" id="heading" alt="Heading Image" /></h1>
+    <p>
+        Can you tell a color from its hexadecimal RGB code value? Look at
+        the hex code, guess its color. To see what color it corresponds to,
+        move the mouse over the hex code. Moving the mouse out of the hex
+        code's table cell will display the color name.
+    </p>
+    <div>
+        <ul>
+            <li id="Black">#000000</li>
+            <li id="Blue">#0000FF</li>
+            <li id="Magenta">#FF00FF</li>
+            <li id="Gray">#808080</li>
+            <li id="Green">#008000</li>
+            <li id="Lime">#00FF00</li>
+            <li id="Maroon">#800000</li>
+            <li id="Navy">#000080</li>
+            <li id="Olive">#808000</li>
+            <li id="Purple">#800080</li>
+            <li id="Red">#FF0000</li>
+            <li id="Silver">#C0C0C0</li>
+            <li id="Cyan">#00FFFF</li>
+            <li id="Teal">#008080</li>
+            <li id="Yellow">#FFFF00</li>
+            <li id="White">#FFFFFF</li>
+        </ul>
+    </div>
+</body>
+
 </html>

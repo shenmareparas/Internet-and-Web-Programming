@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <!-- This is used for SEO -->
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-    <p style="width: 20%; height: 120px; overflow: scroll";>
+    <p style="width: 20%; height: 120px; overflow: scroll" ;>
         This text is the example of overflow and how scroll works.
         we can use it like shown in code.
     </p>
@@ -25,139 +26,141 @@
     <p style="font-size: 20pt; color: red;"><strong>wow we are finally learning something new</strong></p>
     <p><a href="https://www.twitter.com/" target="_blank">Twitter</a></p>
     <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-    
+
     <hr>
     <p style="color: rgb(138, 44, 226);">I don't know how to change line in html</p>
     <p>Now I know we just use P</p>
     but we use <&br> tag for new line that P thing is paragraph not new line
-    <p>to print any special characters we use & and it works same as escape sequences in python</p> 
-    
-    <hr>
-    <p style="color: #465;">x<sup>34</sup>+y<sub>3</sub></p>
-    <p><del>WE CAN ALSO DO THIS LOOKS GOOD !!!</del></p>
-    
-    <p>Now If you want to mail me click <a href="mailto:email@gmail.com">here</a></p>
-    
-    There are <b>Bold</b> and <i>Italic</i> in html but we use <strong>strong</strong> and <em>emphasized</em> rather than <del>bold</del> and <del>Italic</del> because bold and italic are removed.
-    <hr>
+        <p>to print any special characters we use & and it works same as escape sequences in python</p>
 
-    <!-- Lists in HTML -->
-    <ul type="disk">
-        <li>This is first Item of my unordered list</li>
-        <li>This is second Item of my unordered list</li>
+        <hr>
+        <p style="color: #465;">x<sup>34</sup>+y<sub>3</sub></p>
+        <p><del>WE CAN ALSO DO THIS LOOKS GOOD !!!</del></p>
+
+        <p>Now If you want to mail me click <a href="mailto:email@gmail.com">here</a></p>
+
+        There are <b>Bold</b> and <i>Italic</i> in html but we use <strong>strong</strong> and <em>emphasized</em>
+        rather than <del>bold</del> and <del>Italic</del> because bold and italic are removed.
+        <hr>
+
+        <!-- Lists in HTML -->
         <ul type="disk">
-            <li>Another one</li>
-            <li>Another one</li>
-            <li>Another one</li>
+            <li>This is first Item of my unordered list</li>
+            <li>This is second Item of my unordered list</li>
+            <ul type="disk">
+                <li>Another one</li>
+                <li>Another one</li>
+                <li>Another one</li>
+            </ul>
+            <li>This is third Item of my unordered list</li>
         </ul>
-        <li>This is third Item of my unordered list</li>
-    </ul>
-    <ol type="1">
-        <li>This is first Item of my ordered list</li>
-        <ol type="a">
-            <li>Another one</li>
-            <li>Another one</li>
-            <li>Another one</li>
+        <ol type="1">
+            <li>This is first Item of my ordered list</li>
+            <ol type="a">
+                <li>Another one</li>
+                <li>Another one</li>
+                <li>Another one</li>
+            </ol>
+            <li>This is second Item of my ordered list</li>
+            <li>This is third Item of my ordered list</li>
+            </ul>
         </ol>
-        <li>This is second Item of my ordered list</li>
-        <li>This is third Item of my ordered list</li>
-    </ul>
-    </ol>
 
-    <!-- Tables in HTML -->
-    <h3>Table</h3>
-    <table>
-        <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Reg. no</th>
-                <th>Marks</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Aman Kumar Singh</td>
-                <td>21BCE10467</td>
-                <td>67</td>
-            </tr>
-            <tr>
-                <td>Paras</td>
-                <td>21BCE10499</td>
-                <td>79</td>
-            </tr>
-            <tr>
-                <td>Adnan</td>
-                <td>21BCE10494</td>
-                <td>89</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <form action="backend.php">
-        <div>
-            <label for="Name">Name :
-            <input type="text" name="name"></label>
-        </div>
-        <br>
-        <div>
-            Reg. no. : <input type="text" name = "regno">
-        </div>
-        <br>
-        <div>
-            Email :<input type="email" name="email">
-        </div> 
-        <br>
-        <div>
-            <textarea name="Enter about yourself" rows="10" cols="50"></textarea>
-        </div>
-        <br>
-        <div>
-            You agree terms and conditions ? <input type="checkbox" name ="tickornot" >
-        </div>
-        <br>
-        <div>
-            Gender : Male<input type="radio" name="gender" >Female<input type="radio" name="gender">
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="submitButton">
-            <input type="reset" value="Reset Form">
-        </div>
-        <br>
-        <div>
-            <input type="date" value="datee">
-        </div>
-    </form>
-    <br>
-    <hr>
-    <table>
-        <table border="1">
-        <thead>
-            <tr>
-                <th>
-                    <td rowspan = "2"></td>
-                </th>
-                <th>
-                    <td colspan="4"></td>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hlsdfgsdfgsdfgw</td>
-            </tr>
-            <tr>
-                <td>dfgdsfg</td>
-            </tr>
-            <tr>
-                <td>dfgsfgsdfg</td>
-            </tr>
-            <tr>
-                <td>sdfgdsfgsdfg</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <img src="/assets/billi.jpg" alt="Image is not present at source" height="320" width="240" title="Billi">
+        <!-- Tables in HTML -->
+        <h3>Table</h3>
+        <table>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Reg. no</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aman Kumar Singh</td>
+                        <td>21BCE10467</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Paras</td>
+                        <td>21BCE10499</td>
+                        <td>79</td>
+                    </tr>
+                    <tr>
+                        <td>Adnan</td>
+                        <td>21BCE10494</td>
+                        <td>89</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <form action="backend.php">
+                <div>
+                    <label for="Name">Name :
+                        <input type="text" name="name"></label>
+                </div>
+                <br>
+                <div>
+                    Reg. no. : <input type="text" name="regno">
+                </div>
+                <br>
+                <div>
+                    Email :<input type="email" name="email">
+                </div>
+                <br>
+                <div>
+                    <textarea name="Enter about yourself" rows="10" cols="50"></textarea>
+                </div>
+                <br>
+                <div>
+                    You agree terms and conditions ? <input type="checkbox" name="tickornot">
+                </div>
+                <br>
+                <div>
+                    Gender : Male<input type="radio" name="gender">Female<input type="radio" name="gender">
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="submitButton">
+                    <input type="reset" value="Reset Form">
+                </div>
+                <br>
+                <div>
+                    <input type="date" value="datee">
+                </div>
+            </form>
+            <br>
+            <hr>
+            <table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>
+                            <td rowspan="2"></td>
+                            </th>
+                            <th>
+                            <td colspan="4"></td>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hlsdfgsdfgsdfgw</td>
+                        </tr>
+                        <tr>
+                            <td>dfgdsfg</td>
+                        </tr>
+                        <tr>
+                            <td>dfgsfgsdfg</td>
+                        </tr>
+                        <tr>
+                            <td>sdfgdsfgsdfg</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <img src="/assets/billi.jpg" alt="Image is not present at source" height="320" width="240"
+                    title="Billi">
 </body>
