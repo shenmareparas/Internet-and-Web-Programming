@@ -1,0 +1,5 @@
+<!ELEMENT contact (name,age,phoneno,address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT phoneno (#PCDATA)>
+<!ELEMENT address (#PCDATA)>

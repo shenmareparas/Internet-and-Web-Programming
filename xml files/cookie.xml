@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE food SYSTEM "cookie.dtd">
+
+<food>
+    <cookie type = "almond">
+        <calories>123</calories>
+        <carbs>123</carbs>
+        <protein>123</protein>
+        <fat>
+            <monounsatfat>123</monounsatfat>
+            <polyunsatfat>123</polyunsatfat>
+            <saturatedfat>123</saturatedfat>
+            <cholesterol>123</cholesterol>
+        </fat>
+        <sugar>123</sugar>
+    </cookie>
+    <cookie type = "cashew">
+        <calories>123</calories>
+        <carbs>123</carbs>
+        <protein>123</protein>
+        <fat>
+            <monounsatfat>123</monounsatfat>
+            <polyunsatfat>123</polyunsatfat>
+            <saturatedfat>123</saturatedfat>
+            <cholesterol>123</cholesterol>
+        </fat>
+        <sugar>123</sugar>
+    </cookie>
+</food>

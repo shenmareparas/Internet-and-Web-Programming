@@ -1,0 +1,17 @@
+<!ELEMENT food (cookie+)>
+
+<!ELEMENT cookie (calories, carbs, protein, fat, sugar)>
+<!ATTLIST cookie type CDATA #REQUIRED>
+
+<!ELEMENT calories (#PCDATA)>
+<!ELEMENT carbs (#PCDATA)>
+<!ELEMENT protein (#PCDATA)>
+
+<!ELEMENT fat (monounsatfat, polyunsatfat, saturatedfat, cholesterol)>
+<!ELEMENT monounsatfat (#PCDATA)>
+<!ELEMENT polyunsatfat (#PCDATA)>
+<!ELEMENT saturatedfat (#PCDATA)>
+<!ELEMENT cholesterol (#PCDATA)>
+
+
+<!ELEMENT sugar (#PCDATA)>
